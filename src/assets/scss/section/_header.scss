@@ -1,5 +1,9 @@
 .header__logo {
-    border-bottom: 1px solid var(--black200);
+    border-bottom: 1px solid var(--black100);
+
+    @media (max-width: 800px){
+        border-bottom: 0;
+    }
 
     a {
         display: flex;
@@ -104,6 +108,10 @@
     padding: 15px 0 10px;
     background-color: var(--blackAlpha100);
     backdrop-filter: blur(10px);
+
+    @media (max-width: 800px){
+        display: none;
+    }
 
     li {
         display: inline-block;
