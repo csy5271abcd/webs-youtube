@@ -16,6 +16,18 @@ section {
         margin-bottom: 1rem;
     }
 }
+// 섹션 로딩 소스
+// 로딩 중 -> 보이지 않음 -> 로딩 후 보임
+// 서서히 나타나는 효과
+.isLoading {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.isLoaded {
+    opacity: 1;
+    transition: opacity 0.5s; 
+}
+
 
 // 마우스 오버 아이콘
 .play__icon {
